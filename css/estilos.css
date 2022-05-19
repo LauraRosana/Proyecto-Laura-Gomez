@@ -1,0 +1,372 @@
+/*importamos una fuente de google*/ 
+@import url('https://fonts.googleapis.com/css2? family= Roboto & family= Roboto+Mono & display=swap');
+{ 
+    margin: 0;
+    padding-right: 0;
+    box-sizing: border-box 
+} 
+html{
+    /* font-family:'Updock', cursive;*/
+    font-style: "Roboto Mono", monoespacado;
+    font-style: 62.5%; /* esto es igual a 10px ya que es el valor predeterminado del navegador es 16px*/
+    /* 1rem - 1em = 16px*/
+}
+/*indicamos que el body va a tener el tamañodel 100% de alto de la pagina- cada 1v es el 1% de alto de pantalla*/
+height: 100vh
+/* - al body le vamos a dar un 100% de tamaño de pantalla
+- al header y el footer le vamos a dar el 15% de tamaño, es decir el 30% de la pantalla entre los dos
+- el main ocupara un 50% de los 70% de pantalla restantes, y su hijo ocupara el 100% del main 
+- y la seccion que esta fuera del main tendra el 35% de su padre (al igual que el main)*/
+/* ESTILOS GENERALES*/
+
+.body { 
+    font-style: 'Roboto Mono', monoespacado
+    height: 100vh;
+}
+/* ESTILOS GENERALES*/ 
+/* estilos para dos id,con la coma separamos los selectores*/
+.seccion{ 
+    /* va a tener el 20% del contenedor padre,(body)*/
+    height: 20px;
+}
+.logo .navbar {
+    display: flex ;
+    flex-direccion: column;    
+}
+.cabecera {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(25, 27, 134, 0.868);
+    gap: 20px;
+}
+.cabecera__logo img {
+    width: 2%;
+    height: 2%;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+/* vamos a sacar la decoracion a los link */  
+.navbar li a {
+    text-shadow: auto;
+    font-size: 1rem;
+    color: black;
+}
+.navbar, {
+    width: 100%;
+    height: ; /* es el 15% del contenedor en este caso el body que tiene establecido en tamaño*/ 
+    background-color: rgba(242, 79, 193, 0.356);   
+    /* indicamos que la letra sera de un valor relativo con respecto a la etiqueta html*/ 
+    /* el texto lo ponemmos en negrita*/
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    /* alineo los enlaces en el centro*/
+}
+.cabecera {
+    margin: 0;
+    margin-top: 1px;
+    padding-right: 0;
+    box-sizing: border-box
+}
+/* estilos para EL INDEX*/
+.main{
+    /*indicamos que el main va a tener el 100% de ancho de la pantalla*/
+    width: 100%;
+    /*indicamos que el main va a tener el 100% de alto de la pantalla de su contenedor padre (body)*/
+    height: 100%;
+    font-size: 14px;
+    }
+.main__seccion{ 
+    /* va a tener el 100% del tamaño de su contenedor padre,es decir del main*/ 
+    
+    width: 100%;
+    height: 150%;
+    background-color: rgb(53, 48, 218);
+    
+    justify-items: stretch;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat (3 , 1fr);
+    grid-column-gap: 10px;
+    grid-template-rows: 80px;
+    grid-row-gap: 10px;
+    /*margin-right: 0px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    padding: center;*/
+}
+.caja__1__text {
+    width: clamp(45ch, 50%, 75ch);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 237, 67, 0.7);
+    padding: 1rem;
+    border: 5px solid rgba(221, 22, 22, 0.904);
+}
+.caja__2__text {
+    width: clamp(45ch, 50%, 75ch);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 237, 67, 0.7);
+    padding: 1rem;
+    border: 5px solid rgba(221, 22, 22, 0.904);
+}
+.caja__3__text {
+    width: clamp(45ch, 50%, 75ch);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(58, 237, 67, 0.7);
+    padding: 1rem;
+    border: 5px solid rgba(221, 22, 22, 0.904);
+}
+.caja__4 { 
+    background-color: rgba(58, 237, 67, 0.7);
+    *width: 200px;
+    height: 120px;
+    text-align: auto;
+    margin: 10px 50px 30px 80px;
+   
+    padding: 1rem;
+
+    /*display:inline-block;
+    font-size: 2rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 1%;*/
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 16 / 17;
+    
+    margin-top: 100px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    
+    border: 5px solid rgba(221, 22, 22, 0.904);
+    overflow: scroll;
+}
+.publicidad { 
+    background-color: rgba(226, 48, 140, 0.7);
+    width: 98,5%;
+    height: 40%;
+               
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    position: right;
+    
+    padding: 10px;
+}
+
+.footer {
+    height: 500px;
+    width: 150px;
+    background-color:  rgb(53, 48, 218);
+    font-size: 1rem;
+    
+}
+.parrafo { 
+    background-color:  rgb(53, 48, 218);
+    display: grid; 
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 0px 0px 1px;    
+}
+.boton {
+    display: grid;
+    background-color:  rgb(53, 48, 218);
+    background-color: rgb(235, 145, 145);
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: flex-end;
+    margin: 0px 0px 0px 1218px;
+}
+
+/* estilos para la PAGINA CONTACTO*/ 
+.navbar { 
+    /*va a tener el 30% del tamaño de su contenedor padre, es decir del body*/
+    background-color: rgba(242, 79, 193, 0.356); 
+    width: 100%;
+    height: 20%;
+    font-weight: bold;   
+    font-size: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+.formulario__container { 
+    height: 100px;
+    position: center;
+    blackground-image: linear-gradient (rgb(69, 30, 199);), url(../img/tormeta.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+.formulario__container { 
+    width: 50%;
+    margin-top: 10%;  
+    margin-right: 80%;
+    margin-bottom: 20%;
+    margin-left: 20%; 
+}
+.caja__formulario{
+    
+    height: 350%;
+    position: center;
+    blackground-imagen: linear-gradient (rgb(20, 6, 66);), url (../img/tormenta.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  rgb (69, 30, 199); 
+    text-align:center;
+    margin-left: 0px; 
+    margin-right: 0px;
+    margin-top: 40px;
+   
+    padding: 10px;
+
+    border: 10px
+    position: center;
+}
+.formulario input, textarea{
+    font-size: 1.5 rem;
+}
+/* estilos para la PAGINA GALERIA*/ 
+.  
+.conteiner__fotos {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    background-color:  background-color: rgb(53, 48, 218);
+    height: 100vh;
+    /* tenemos que ver los hijos directos del contenedor div, 
+    y en este caso son 3 header main footer*/
+    display: grid; 
+    /* con esta linea cambia el tamaño de las columnas*/ 
+    grid-template-columns: auto;
+    grid-template-areas: repeat (3, 1fr) ;
+    grid-template-rows: auto;
+    /* tambien podriamos poner, que si miramos tenemos 3 columnas 
+    y en las areas colocamos 3 columnas tambien
+    grid-template-areas: " header header header "
+                         " main main main "
+                         " footer footer footer ";*/
+}
+.padre {
+    display: grid;
+    background-color: rgb(53, 48, 218);
+    border: solid 1px black
+           
+    width: 100%;
+    grid-column: 100px 100px 100px; 
+        
+}
+.navbar li a {
+    font-size: 1rem;
+} 
+.conteiner__fotos {
+    /* esto corresponde a los componentes de como quiero acomodar
+    a los hijos que son: los divs que contienen a las imagenes y los h3*/
+    display: grid; 
+    grid-template-areas: auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (3 , 1fr);
+    grid-row-gap: auto;
+    grid-column: 200% 200% 200%; 
+    display:flex;
+    flex-wrap: wrap;
+}
+/* ahora quiero pensar en que cada div contiene la imagen */
+.card img {
+    /* esto corresponde a la maquetacion del componente, que quiero
+    acomodar a sus hijos, que son img y un h3*/
+    display: grid;
+    justify-items: stretch;
+    /* quiero que cada card tenga un margen, un borde y una sombra
+    eso se hace con boxmodel */ 
+    box-shadow: 10px 10px 10px #000;
+    border-radius: 25% 10%;
+     
+    margin: 10px;    
+}
+.card img {
+    width: 30%;
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(53, 48, 218);
+    color: black; 
+    font-size: 1rem;
+    }
+ 
+/* al footer le aplicamos color de fondo*/ 
+.estilos Footer {
+    height: 500px;
+    width: 150px;
+    background-color:  rgb(53, 48, 218);
+    font-size: 1rem;
+    
+}
+.parrafo { 
+    background-color:  rgb(53, 48, 218);
+    display: grid; 
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0px 0px 0px 1px;    
+}
+.boton {
+    display: grid;
+    background-color:  rgb(53, 48, 218);
+    background-color: rgb(235, 145, 145);
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: flex-start;
+    margin: 0px 0px 0px 1218px;
+    transform: rotateX (100deg);
+}
+@media screen and (min-width: 768px) {
+    .padre {
+        grid-template-columns: auto;
+        grid-template-rows: repeat (3 , 1fr);
+    }
+    /* en tamaño de pantallas la letra se borda y se hace que tenga un overflow-x 
+    entonces vamos a achhicar solo el tamaño de la letra para el componente de la navegacion*/
+}
+
+ /* estilos para nosotros*/ 
+.main__nosotros, .main__galeria, .main__info{
+    /* va a tener el 70% del tamaño de su contenedor padre, es decir del body*/
+    height: 100px;
+} 
+/* a los parrafos le aplicamos el tamaño de letra y color negro*/
+.estilos Footer {
+    color: black; 
+    font-size: 0.5rem;
+}
+/* vamos armar la grilla para todo el proyecto, luego este codigo
+lo vamos a acomodar y subir porque debemos tener cuidado con la 
+cascada */ 
+.conteiner__grid {
+    /* tenemos que ver los hijos directos del contenedor div, 
+    y en este caso son 3 header main footer*/
+    display:grid; 
+    /* con esta linea cambia el tamaño de las columnas*/ 
+    grid-template-columns:repeat (3 , 1fr);
+    grid-template-areas:"header"
+                        " main"
+                        "footer";
+    grid-template-rows: auto;
+    /* tambien podriamos poner, que si miramos tenemos 4 columnas 
+    y en las areas colocamos 3 columnas tambien
+    grid-template-columns: repeat (4,1fr);
+    grid-template-areas: " header header header "
+                         " main main main "
+                         " footer footer footer ";*/
+}
